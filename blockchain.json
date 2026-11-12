@@ -1,0 +1,33 @@
+[
+  {
+    "index": 0,
+    "timestamp": "2026-11-12 14:26:42.962689",
+    "data": {
+      "message": "Bloc de genèse"
+    },
+    "previous_hash": "0",
+    "hash": "0e08ceee3b7c3956ad709615ab8e5b0927ca353dcffdf04e8139e0685c9a9e33"
+  },
+  {
+    "index": 1,
+    "timestamp": "2026-11-12 14:26:42.962689",
+    "data": {
+      "agent": "Strategie",
+      "action": "BUY",
+      "prevision": 0.012
+    },
+    "previous_hash": "0e08ceee3b7c3956ad709615ab8e5b0927ca353dcffdf04e8139e0685c9a9e33",
+    "hash": "862092475a6e7fcce24b718698e4a87c4db5c05853eaf7352f5c35a24b759da2"
+  },
+  {
+    "index": 2,
+    "timestamp": "2026-11-12 14:26:42.962689",
+    "data": {
+      "agent": "Risque",
+      "action": "HOLD",
+      "prevision": -0.003
+    },
+    "previous_hash": "862092475a6e7fcce24b718698e4a87c4db5c05853eaf7352f5c35a24b759da2",
+    "hash": "49df0e6406deb28dcdf96136fabf429815c806f259ba8e5a7bd84c54a4e54e92"
+  }
+]
