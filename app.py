@@ -42,13 +42,14 @@ with onglets[0]:
     c4.metric("Max Drawdown", f"{comp.loc['Max Drawdown (%)', col_sys]:.2f} %")
 
     st.line_chart(valeurs[["Buy and Hold", "SMA 10/20", "Système d'agents"]])
-    st.caption("Capital initial : 10 000 $ virtuels. Coûts de transaction : 0,1 % par opération.")
+    st.caption("Capital initial : 1 000 000 $ virtuels. Coûts de transaction : 0,1 % par opération.")
     st.dataframe(comp)
 
     v1 = RESULTATS / "comparaison_test_v1.csv"
     if v1.exists():
         with st.expander("Version 1 du système (avant correction de l'agent de risque)"):
             st.dataframe(pd.read_csv(v1, index_col=0))
+            st.caption("Version 1 : capital initial 10 000 $, présentée à titre d'historique.")
 
 # ---------------------------------------------------------------- Prévisions
 with onglets[1]:
@@ -131,7 +132,7 @@ rendement logarithmique du lendemain. Moyenne de 3 entraînements.
 **Agents** : prévision, stratégie (seuil de 0,1 %), risque (exposition maximale 90 %, stop-loss 10 %,
 limite de perte 20 % avec pause), exécution (opérations virtuelles et enregistrement dans la blockchain).
 
-**Hypothèses de simulation** : capital initial 10 000 $, coûts de 0,1 % par opération, décisions
+**Hypothèses de simulation** : capital initial 1 000 000 $, coûts de 0,1 % par opération, décisions
 exécutées au cours de clôture, fractions d'action autorisées, Sharpe annualisé sur 252 jours sans taux sans risque.
 
 **Limites** : une seule période de test ; le modèle n'apporte pas d'amélioration mesurable par rapport à la
