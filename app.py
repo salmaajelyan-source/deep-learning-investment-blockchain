@@ -4,7 +4,7 @@ import streamlit as st
 from blockchain_core import Blockchain
 
 RACINE = Path(__file__).parent
-RESULTATS = RACINE / "results"
+RESULTATS = RACINE
 
 st.set_page_config(page_title="SAP Intelligent Investment", layout="wide")
 st.title("SAP Intelligent Investment")
